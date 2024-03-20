@@ -20,10 +20,11 @@ const PostPage = async () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <h2 className="card-title">{post.title}</h2>
+              <p>{post.description}</p>
+              <p>Liked by: {post.like_count}</p>
               <div className="card-actions">
-                <button className="btn btn-primary">Buy Now</button>
+                <button className="btn btn-primary">see more</button>
               </div>
             </div>
           </div>
