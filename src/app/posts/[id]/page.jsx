@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+export const dynamic = "force-dynamic";
 const page = async ({ params }) => {
+  console.log(params.id);
   const res = await fetch(`http://localhost:5000/posts/${params.id}`);
+  // const res = await fetch(`http://localhost:5000/posts/1`);
   const post = await res.json();
-  console.log(post);
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl mx-auto ">
+    <div className="card  bg-base-100 shadow-xl container mx-auto">
       <figure className="px-10 pt-10">
         <Image
           width={400}
@@ -24,7 +25,7 @@ const page = async ({ params }) => {
         <p>Liked by: {post.like_count}</p>
         <div className="card-actions">
           <Link href={`/posts`}>
-            <button className="btn btn-primary">Back</button>
+            <button className="btn btn-primary ">Back</button>
           </Link>
         </div>
       </div>
