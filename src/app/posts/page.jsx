@@ -1,12 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const PostPage = async () => {
-  const res = await fetch("http://localhost:5000/posts");
+  const res = await fetch("http://localhost:5000/posts", {
+    cache: "no-store",
+    // next: { revalidate: 5 },
+  });
   const posts = await res.json();
   return (
     <div className="">
-      <h1>this is post page:{posts.length}</h1>
+      <h1>this is posts page:{posts.length}</h1>
       <div className="grid grid-cols-3 container mx-auto gap-10">
         {posts.map((post) => (
           <div key={post.id} className="card w-96 bg-base-100 shadow-xl">
@@ -24,7 +28,9 @@ const PostPage = async () => {
               <p>{post.description}</p>
               <p>Liked by: {post.like_count}</p>
               <div className="card-actions">
-                <button className="btn btn-primary">see more</button>
+                <Link href={`/posts/${post.id}`}>
+                  <button className="btn btn-primary">see more</button>
+                </Link>
               </div>
             </div>
           </div>

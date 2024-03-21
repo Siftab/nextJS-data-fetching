@@ -2,27 +2,27 @@
   "posts": [
     {
       "id": 1,
-      "title": "The Art of Cooking",
+      "title": "The Art of Cooking Kala bhuna",
       "description": "Discover the secrets of culinary excellence in this comprehensive guide. From basic techniques to advanced recipes, this book covers everything you need to become a master chef.",
-      "like_count": 100
+      "like_count": 1001
     },
     {
       "id": 2,
-      "title": "Exploring the Cosmos",
+      "title": "Exploring the lalBhuna",
       "description": "Embark on a journey through the vastness of space and time. Learn about the wonders of the universe, from distant galaxies to exotic phenomena like black holes and supernovae.",
-      "like_count": 75
+      "like_count": 1500
     },
     {
       "id": 3,
-      "title": "The Power of Mindfulness",
+      "title": "The Power of Beef",
       "description": "Transform your life with the practice of mindfulness. This book offers practical techniques to reduce stress, increase focus, and cultivate inner peace.",
-      "like_count": 120
+      "like_count": 9999
     },
     {
       "id": 4,
       "title": "History's Greatest Empires",
       "description": "Delve into the rise and fall of civilizations throughout history. From the mighty Roman Empire to the vast Mongol Khanate, explore the triumphs and tragedies of humanity's past.",
-      "like_count": 90
+      "like_count": 2907
     },
     {
       "id": 5,
@@ -34,7 +34,7 @@
       "id": 6,
       "title": "The Art of Photography",
       "description": "Capture life's most precious moments with the art of photography. From composition to lighting, this book covers everything you need to know to take stunning photographs.",
-      "like_count": 110
+      "like_count": 1101
     }
   ]
 }
